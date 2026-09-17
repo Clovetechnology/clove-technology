@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Clove Technology certificate verification page.">
+<title>Certificate Verification | Clove Technology</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.verify-hero{padding:75px 0;background:linear-gradient(120deg,#f5f9ff 0%,#fff 55%,#fff8df 100%);text-align:center}
+.verify-hero h1{font-size:50px;line-height:1.1;margin:18px 0 12px;letter-spacing:-2px}.verify-hero h1 span{color:#1769ff}.verify-hero p{max-width:650px;margin:auto;color:#5d718b;font-size:16px}
+.verify-section{padding:75px 0 95px}.verify-card{max-width:720px;margin:auto;padding:38px;background:#fff;border:1px solid #e1eaf5;border-radius:24px;box-shadow:0 18px 45px rgba(31,69,111,.08)}
+.verify-card h2{margin:0 0 8px;font-size:28px}.verify-card>p{margin:0 0 25px;color:#6b7f98;font-size:13px}.verify-input{display:flex;gap:12px}.verify-input input{margin:0;flex:1;text-transform:uppercase}.verify-result{display:none;margin-top:25px;padding:20px;border-radius:16px;background:#f5f9ff;border:1px solid #e2ecf8}.verify-result strong{color:#1769ff}.verify-note{margin-top:22px;padding:14px 16px;border-radius:12px;background:#fff8df;border:1px solid #f0df9d;color:#705d23;font-size:11px;line-height:1.6}
+.verify-features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.verify-feature{padding:22px;border-radius:18px;background:#f7faff;border:1px solid #e2ecf8;text-align:center}.verify-feature b{display:block;font-size:13px;margin-bottom:5px}.verify-feature span{font-size:11px;color:#71839a}
+@media(max-width:650px){.verify-hero h1{font-size:38px}.verify-card{padding:25px}.verify-input{flex-direction:column}.verify-features{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="nav-wrap"><nav class="nav container"><a class="brand" href="index.html"><img src="clove-technology-logo.png" alt="Clove Technology logo"><span>CLOVE <small>TECHNOLOGY</small></span></a><div class="nav-links"><a href="index.html">Home</a><a href="courses.html">Courses</a><a href="about.html">About</a><a href="apply.html">Student Enquiry</a><a class="active" href="certificate-verification.html">Certificate Verification</a></div><a class="nav-cta" href="apply.html">Apply Now <span>→</span></a></nav></header>
+<main>
+<section class="verify-hero"><div class="container"><span class="kicker">CLOVE TECHNOLOGY</span><h1>Certificate <span>Verification</span></h1><p>Verify a Clove Technology certificate using its unique certificate number.</p></div></section>
+<section class="verify-section"><div class="container"><div class="verify-card"><h2>Verify Your Certificate</h2><p>Enter the certificate number printed on the certificate.</p><div class="verify-input"><input id="certificateNumber" type="text" placeholder="Example: CT-2026-PY-0001" aria-label="Certificate number"><button class="btn primary" type="button" onclick="verifyCertificate()">Verify Certificate →</button></div><div id="verifyResult" class="verify-result"></div><div class="verify-note"><strong>Verification system:</strong> This page is the public verification interface. The live certificate database and QR-linked verification records will be connected when the secure academy backend is implemented.</div></div><div class="verify-features"><div class="verify-feature"><b>Unique Certificate Number</b><span>Structured certificate ID for each issued record.</span></div><div class="verify-feature"><b>QR Code</b><span>QR codes can point directly to this verification page.</span></div><div class="verify-feature"><b>Online Verification</b><span>Public verification interface for certificate records.</span></div></div></div></section>
+</main>
+<footer><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img src="clove-technology-logo.png" alt="Clove Technology logo"><span>CLOVE <small>TECHNOLOGY</small></span></a><p>Learn • Build • Grow</p><p>Practical technology and career-focused learning.</p></div><div><b>Explore</b><a href="courses.html">Courses</a><a href="about.html">About</a><a href="apply.html">Student Enquiry</a><a href="certificate-verification.html">Certificate Verification</a></div><div><b>Contact</b><p>clovetechnology2026@gmail.com</p><a href="apply.html">Apply for a Free Demo →</a></div></div><div class="copyright">© 2026 Clove Technology. All rights reserved.</div></footer>
+<script>
+function verifyCertificate(){
+ const value=document.getElementById('certificateNumber').value.trim().toUpperCase();
+ const result=document.getElementById('verifyResult');
+ if(!value){result.style.display='block';result.innerHTML='<strong>Please enter a certificate number.</strong>';return;}
+ result.style.display='block';
+ result.innerHTML='<strong>Certificate number received:</strong> '+value+'<br><span style="font-size:11px;color:#6b7f98">Live record verification will be connected to the Clove Technology certificate database in the secure backend.</span>';
+}
+</script>
+</body>
+</html>
