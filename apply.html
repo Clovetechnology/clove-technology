@@ -1,4 +1,196 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Apply | Clove Technology</title><link rel="stylesheet" href="style.css"></head><body>
-<nav><div class="brand"><img src="clove-technology-logo.png">CLOVE TECHNOLOGY</div><div><a href="index.html">Home</a><a href="courses.html">Courses</a><a href="about.html">About</a><a href="apply.html">Apply</a></div></nav>
-<section><h1>Apply / Enquire</h1><p>Fill in your details. We will connect with you about the course and demo.</p><form action="mailto:clovetechnology2026@gmail.com" method="post" enctype="text/plain"><label>Name</label><input name="Name" required><label>Phone</label><input name="Phone" required><label>Course</label><select name="Course"><option>Digital & AI Starter</option><option>Python Career Builder</option><option>AI & Technology Program</option></select><label>Message</label><textarea name="Message" rows="5"></textarea><button class="btn gold" type="submit">Send Enquiry</button></form></section>
-<footer>Email: clovetechnology2026@gmail.com</footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Student enquiry and admission form for Clove Technology.">
+  <title>Student Enquiry | Clove Technology</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="clove-technology-logo.png" alt="Clove Technology logo">
+        <span>CLOVE TECHNOLOGY</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a class="active" href="apply.html">Student Enquiry</a>
+      </nav>
+      <a class="nav-cta" href="courses.html">View Courses <span>→</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="enquiry-hero">
+      <div class="container enquiry-hero-grid">
+        <div>
+          <span class="eyebrow">STUDENT ENQUIRY & ADMISSION</span>
+          <h1>Start your journey with <span>Clove Technology.</span></h1>
+          <p>Complete the student enquiry form with your basic details. Our admissions team can contact you about course options, batches and next steps.</p>
+          <div class="enquiry-points">
+            <span>✓ Course guidance</span>
+            <span>✓ Batch information</span>
+            <span>✓ Admission support</span>
+          </div>
+        </div>
+        <div class="enquiry-side-card">
+          <div class="mini-label">ADMISSION PROCESS</div>
+          <div class="enquiry-step"><b>01</b><span>Submit your enquiry</span></div>
+          <div class="path-line"></div>
+          <div class="enquiry-step"><b>02</b><span>Admissions team contacts you</span></div>
+          <div class="path-line"></div>
+          <div class="enquiry-step"><b>03</b><span>Choose course & batch</span></div>
+          <div class="path-line"></div>
+          <div class="enquiry-step"><b>04</b><span>Complete admission</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="enquiry-section">
+      <div class="container enquiry-layout">
+        <div class="enquiry-form-card">
+          <div class="section-head enquiry-head">
+            <div>
+              <div class="kicker">STUDENT DETAILS</div>
+              <h2>Student <span>Enquiry Form</span></h2>
+              <p>Please enter accurate information so our team can contact you.</p>
+            </div>
+          </div>
+
+          <form id="studentEnquiryForm" action="mailto:clovetechnology2026@gmail.com" method="post" enctype="text/plain">
+            <div class="form-grid">
+              <div class="form-field full">
+                <label for="studentName">Student Name <span>*</span></label>
+                <input id="studentName" name="Student Name" type="text" placeholder="Enter full name" required>
+              </div>
+
+              <div class="form-field">
+                <label for="mobile">Student Mobile Number <span>*</span></label>
+                <input id="mobile" name="Student Mobile Number" type="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number" required>
+              </div>
+
+              <div class="form-field">
+                <label for="altMobile">Alternative Mobile Number</label>
+                <input id="altMobile" name="Alternative Mobile Number" type="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="Optional 10-digit number">
+              </div>
+
+              <div class="form-field full">
+                <label for="email">Student Email <span>*</span></label>
+                <input id="email" name="Student Email" type="email" placeholder="student@example.com" required>
+              </div>
+
+              <div class="form-field full">
+                <label for="education">Education Details <span>*</span></label>
+                <textarea id="education" name="Education Details" rows="4" placeholder="Example: B.Sc Computer Science, 2024, 83%" required></textarea>
+              </div>
+
+              <div class="form-field full">
+                <label for="course">Course Interested In <span>*</span></label>
+                <select id="course" name="Course Interested In" required>
+                  <option value="">Select a course</option>
+                  <option>Digital & AI Starter</option>
+                  <option>Python Career Builder</option>
+                  <option>AI & Technology Program</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="resume">Student Resume</label>
+                <input id="resume" name="Student Resume" type="file" accept=".pdf,.doc,.docx">
+                <small>PDF, DOC or DOCX. Recommended maximum: 5 MB.</small>
+              </div>
+
+              <div class="form-field">
+                <label for="photo">Student Photo (Half-Length)</label>
+                <input id="photo" name="Student Photo" type="file" accept=".jpg,.jpeg,.png">
+                <small>JPG, JPEG or PNG. Recommended maximum: 5 MB.</small>
+              </div>
+
+              <div class="form-field full">
+                <label for="address">Student Address <span>*</span></label>
+                <textarea id="address" name="Student Address" rows="5" placeholder="House / Street, Village / Town, Mandal, District, State, PIN" required></textarea>
+              </div>
+
+              <div class="form-field full">
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="Additional Information" rows="4" placeholder="Preferred batch, learning goal, or any question"></textarea>
+              </div>
+            </div>
+
+            <div class="privacy-note">
+              <strong>🔒 Privacy note:</strong> Please provide information only for admission/enquiry purposes. Do not enter passwords, banking PINs, or other confidential credentials.
+            </div>
+
+            <button class="btn primary enquiry-submit" type="submit">Submit Student Enquiry <span>→</span></button>
+          </form>
+
+          <div class="upload-note">
+            <strong>File upload note:</strong> This GitHub Pages version displays the resume and photo upload fields, but GitHub Pages itself is a static hosting service and does not provide a server-side database or file-upload backend. Actual secure storage/submission of these files will be connected in the next admission-system upgrade.
+          </div>
+        </div>
+
+        <aside class="enquiry-info-card">
+          <div class="kicker">NEED HELP?</div>
+          <h3>Talk to Clove Technology</h3>
+          <p>Have questions about courses, eligibility, batches or admissions? Contact the academy before submitting the form.</p>
+          <a class="contact-item" href="mailto:clovetechnology2026@gmail.com">
+            <b>Email</b>
+            <span>clovetechnology2026@gmail.com</span>
+          </a>
+          <a class="contact-item" href="https://wa.me/?text=Hello%20Clove%20Technology%2C%20I%20want%20course%20information." target="_blank" rel="noopener">
+            <b>WhatsApp</b>
+            <span>Chat with admissions</span>
+          </a>
+          <div class="info-divider"></div>
+          <div class="info-check">✓ Course selection guidance</div>
+          <div class="info-check">✓ Batch information</div>
+          <div class="info-check">✓ Admission assistance</div>
+          <div class="info-check">✓ Career-focused learning</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><img src="clove-technology-logo.png" alt="Clove Technology logo"><span>CLOVE TECHNOLOGY</span></a>
+        <p>Practical technology education for learners who want to learn, build and grow.</p>
+      </div>
+      <div>
+        <b>Quick Links</b>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="apply.html">Student Enquiry</a>
+      </div>
+      <div>
+        <b>Contact</b>
+        <a href="mailto:clovetechnology2026@gmail.com">clovetechnology2026@gmail.com</a>
+      </div>
+    </div>
+    <div class="container copyright">© 2026 Clove Technology. Learn • Build • Grow.</div>
+  </footer>
+
+  <script>
+    document.getElementById('studentEnquiryForm').addEventListener('submit', function (event) {
+      const maxSize = 5 * 1024 * 1024;
+      const resume = document.getElementById('resume').files[0];
+      const photo = document.getElementById('photo').files[0];
+      if (resume && resume.size > maxSize) {
+        event.preventDefault();
+        alert('Please select a resume smaller than 5 MB.');
+        return;
+      }
+      if (photo && photo.size > maxSize) {
+        event.preventDefault();
+        alert('Please select a photo smaller than 5 MB.');
+      }
+    });
+  </script>
+</body>
+</html>
