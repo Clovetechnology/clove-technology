@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Clove Technology student dashboard for attendance, fees, course progress, projects and certificates.">
+<title>Student Dashboard | Clove Technology</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.dashboard-hero{padding:64px 0 48px;background:linear-gradient(120deg,#f5f9ff 0%,#fff 58%,#fff8df 100%)}
+.dashboard-hero h1{font-size:48px;line-height:1.1;margin:15px 0 10px;letter-spacing:-1.5px}.dashboard-hero h1 span{color:#1769ff}.dashboard-hero p{color:#607793;max-width:650px;font-size:15px}
+.dashboard-login{margin-top:28px;display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:12px;background:#1769ff;color:#fff;text-decoration:none;font-weight:800;font-size:13px;box-shadow:0 12px 24px rgba(23,105,255,.2)}
+.dashboard-section{padding:58px 0 80px;background:#fff}.dashboard-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.dashboard-card{padding:24px 19px;border:1px solid #e0eaf5;border-radius:19px;background:#fff;box-shadow:0 12px 28px rgba(31,69,111,.06)}.dashboard-icon{width:48px;height:48px;border-radius:14px;background:#eaf3ff;display:grid;place-items:center;font-size:21px;margin-bottom:15px}.dashboard-card:nth-child(2) .dashboard-icon{background:#e5f8f1}.dashboard-card:nth-child(3) .dashboard-icon{background:#fff4d2}.dashboard-card:nth-child(4) .dashboard-icon{background:#eee9ff}.dashboard-card:nth-child(5) .dashboard-icon{background:#e8f0ff}.dashboard-card h3{font-size:15px;margin:0 0 7px;color:#102a52}.dashboard-card p{font-size:11px;color:#71839a;line-height:1.6;margin:0}.dashboard-panel{margin-top:28px;padding:30px;border-radius:22px;background:#f5f9ff;border:1px solid #e2ecf8}.dashboard-panel h2{font-size:25px;margin:0 0 9px}.dashboard-panel p{font-size:12px;color:#667b96;margin:0 0 20px}.dashboard-preview{display:grid;grid-template-columns:1fr 1fr;gap:15px}.preview-box{background:#fff;border:1px solid #e2eaf3;border-radius:15px;padding:19px}.preview-box b{font-size:12px}.preview-box small{display:block;color:#7a8da5;margin-top:5px;font-size:10px}.progress-bar{height:8px;background:#e6edf5;border-radius:10px;margin-top:13px;overflow:hidden}.progress-bar span{display:block;height:100%;width:68%;background:#1769ff;border-radius:10px}.dashboard-note{margin-top:22px;padding:14px 16px;border-radius:12px;background:#fff8df;border:1px solid #f0df9d;color:#705d23;font-size:11px}.dashboard-note strong{color:#102f67}
+@media(max-width:1050px){.dashboard-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.dashboard-hero h1{font-size:38px}.dashboard-grid{grid-template-columns:1fr 1fr}.dashboard-preview{grid-template-columns:1fr}}
+@media(max-width:480px){.dashboard-grid{grid-template-columns:1fr}.dashboard-section{padding:45px 0 60px}}
+</style>
+</head>
+<body>
+<header class="nav-wrap"><nav class="nav container"><a class="brand" href="index.html"><img src="clove-technology-logo.png" alt="Clove Technology logo"><span>CLOVE <small>TECHNOLOGY</small></span></a><div class="nav-links"><a href="index.html">Home</a><a href="courses.html">Courses</a><a href="about.html">About</a><a href="apply.html">Student Enquiry</a><a href="certificate-verification.html">Certificate Verification</a></div><a class="nav-cta" href="apply.html">Apply Now <span>→</span></a></nav></header>
+<main>
+<section class="dashboard-hero"><div class="container"><span class="kicker">STUDENT PORTAL</span><h1>Your Learning, <span>All in One Place.</span></h1><p>Students can use the Clove Technology dashboard to access their learning information, academic records, project progress and certificate details.</p><a class="dashboard-login" href="apply.html">Student Login →</a></div></section>
+<section class="dashboard-section"><div class="container"><div class="dashboard-grid">
+<article class="dashboard-card"><div class="dashboard-icon">🔐</div><h3>Login</h3><p>Secure student login area for accessing personal academy information.</p></article>
+<article class="dashboard-card"><div class="dashboard-icon">📅</div><h3>Attendance</h3><p>View attendance records and monitor participation throughout the course.</p></article>
+<article class="dashboard-card"><div class="dashboard-icon">💳</div><h3>Fees</h3><p>Check fee status, payment records and outstanding amounts.</p></article>
+<article class="dashboard-card"><div class="dashboard-icon">📈</div><h3>Course Progress</h3><p>Track completed modules, assessments and overall learning progress.</p></article>
+<article class="dashboard-card"><div class="dashboard-icon">🚀</div><h3>Projects</h3><p>View assigned projects, submissions and project completion status.</p></article>
+</div>
+<div class="dashboard-panel"><span class="kicker">STUDENT OVERVIEW</span><h2>Personal Learning Dashboard</h2><p>A future-ready student portal for Clove Technology learners.</p><div class="dashboard-preview"><div class="preview-box"><b>Course Progress</b><small>Python Career Builder • Progress tracking</small><div class="progress-bar"><span></span></div></div><div class="preview-box"><b>Certificate</b><small>Certificate number and verification status can appear here.</small></div><div class="preview-box"><b>Attendance</b><small>Attendance percentage and monthly records can appear here.</small></div><div class="preview-box"><b>Fees</b><small>Paid, pending and payment history can appear here.</small></div></div><div class="dashboard-note"><strong>System upgrade:</strong> This page is currently the professional dashboard interface. Real login, student-specific records and secure data storage require a backend/database and authentication system.</div></div>
+</div></section>
+</main>
+<footer><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img src="clove-technology-logo.png" alt="Clove Technology logo"><span>CLOVE <small>TECHNOLOGY</small></span></a><p>Learn • Build • Grow</p><p>Practical technology and career-focused learning.</p></div><div><b>Explore</b><a href="courses.html">Courses</a><a href="about.html">About</a><a href="apply.html">Student Enquiry</a><a href="certificate-verification.html">Certificate Verification</a><a href="student-dashboard.html">Student Dashboard</a></div><div><b>Contact</b><p>clovetechnology2026@gmail.com</p><a href="apply.html">Apply for a Free Demo →</a></div></div><div class="copyright">© 2026 Clove Technology. All rights reserved.</div></footer>
+</body>
+</html>
